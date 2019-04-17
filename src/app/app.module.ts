@@ -8,6 +8,8 @@ import { ContentAreaComponent } from './content-area/content-area.component';
 import { FooterComponent } from './footer/footer.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { EducationComponent } from './education/education.component';
 
 
 @NgModule({
@@ -17,11 +19,27 @@ import { ExperiencesComponent } from './experiences/experiences.component';
     ContentAreaComponent,
     FooterComponent,
     SkillsComponent,
-    ExperiencesComponent
+    ExperiencesComponent,
+    ProjectsComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
+      {
+        path: 'education',
+        component: EducationComponent
+      },
+
+      {
+        path: 'projects',
+        component: ProjectsComponent
+      },
+
+      {
+        path: 'experiences',
+        component: ExperiencesComponent
+      },
       {
         path: 'skills',
         component: SkillsComponent
